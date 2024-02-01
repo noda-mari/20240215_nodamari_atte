@@ -1,0 +1,89 @@
+.header__nav {
+    width: 50%;
+}
+
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav button {
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.content__header {
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    width: 60%;
+    text-align: center;
+}
+
+.working-time__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.working__form {
+    width: 48%;
+}
+
+.working-start__button,
+.working-end__button {
+    margin-bottom: 1.8rem;
+    width: 100%;
+}
+
+.working-start__button button,
+.working-end__button button {
+    width: 100%;
+    padding: 4rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.breaking-time__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.breaking__form {
+    width: 48%;
+}
+
+.breaking-start__button,
+.breaking-end__button {
+    margin-bottom: 5.5rem;
+    width: 100%;
+}
+
+.breaking-start__button button,
+.breaking-end__button button {
+    width: 100%;
+    padding: 4rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.header__nav {
+    width: 30%;
+}
+
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav button {
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.body {
+    width: 100vw;
+    height: 90vh;
+    background-color: #e6e6e6;
+}
+
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    align-items: center;
+    width: 30%;
+}
+
+.back__date-button,
+.next__date-button {
+    padding: 0.1rem 0.8rem;
+    background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+    font-size: 1.5rem;
+}
+
+.content__header p {
+    font-size: 1.3rem;
+
+}
+
+.attendance-table {
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.attendance-table table {
+    width: 100%;
+    text-align: left
+}
+
+.th-row {
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.td-row {
+    border-top: 1px solid #a9a9a9;
+}
+
+
+
+.attendance-table th,td{
+    padding: 1rem 1.5rem;
+    width: 20%;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    padding: 0.5em 1rem;
+    background-color: #fff;
+}
+
+li.page-item.active {
+    background-color: blue;
+    color: #fff;
+}
+
+a.page-link{
+    text-decoration: none;
+}
+

@@ -1,0 +1,82 @@
+.header__nav {
+    width: 30%;
+}
+
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav button {
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.content__header {
+    padding: 0.8rem 1.5rem;
+}
+
+.content__header p {
+    text-align: center;
+}
+
+.attendance-table {
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.attendance-table table {
+    width: 100%;
+    text-align: left
+}
+
+.th-row {
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.td-row {
+    border-top: 1px solid #a9a9a9;
+}
+
+
+
+.attendance-table th,
+td {
+    padding: 1rem 1.5rem;
+    width: 20%;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    padding: 0.5em 1rem;
+    background-color: #fff;
+}
+
+li.page-item.active {
+    background-color: blue;
+    color: #fff;
+}
+
+a.page-link {
+    text-decoration: none;
+}

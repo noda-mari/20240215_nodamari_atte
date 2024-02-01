@@ -1,0 +1,39 @@
+.header {
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    line-height: 1.5rem;
+}
+
+.header__nav {
+    width: 30%;
+}
+
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__nav a {
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
