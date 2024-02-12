@@ -1,10 +1,10 @@
-#アプリケーション名
+# アプリケーション名
 **Atte**
 
-##作成した目的
+## 作成した目的
 初級模擬案件の課題として作成いたしました。
 
-##アプリケーションURL
+## アプリケーションURL
 http://localhost/register
 こちらにアクセスすると、ログインページが表示されます。
 新規会員登録をクリックしていただき、会員登録を行ってください。
@@ -14,7 +14,7 @@ http://localhost/register
 envファイルでのSMTPサーバー設定等につきましては、下記の環境設定を参照ください。
 
 
-##機能一覧
+## 機能一覧
 会員登録
 ログイン機能
 メール認証機能
@@ -25,39 +25,39 @@ envファイルでのSMTPサーバー設定等につきましては、下記の�
 従業員一覧
 従業員別、勤務時間の一覧
 
-##使用技術
+## 使用技術
 laravel : 8.*
 nginx : 1.21.1
 PHP : 8.2
 mysql : 8.0.26
 Docker : 24.0.6
 
-##テーブル設計
+## テーブル設計
 
 
-##ER図
+## ER図
 
 
-##環境構築
+## 環境構築
 以下の手順に従って、ローカル環境でこのアプリケーションをセットアップしてください。
 
-###1.リポジトリのクローン
+### 1.リポジトリのクローン
 $ git clone git@github.com:noda-mari/20240215_nodamari_atte.git
 
-###2. Dockerコンテナの起動とビルド
+### 2. Dockerコンテナの起動とビルド
 $ docker-compose up -d --build
 
-###3. Composer パッケージのインストール
+### 3. Composer パッケージのインストール
 $ docker-compose exec php bash      PHPコンテナ内にログイン
 
 $ composer install
 
-###4. 環境ファイルの設定
+### 4. 環境ファイルの設定
 $ cp .env.example .env     `.env.example` ファイルを `.env` という名前でコピー
 
 $ exit
 
-###5. 環境ファイルの設定
+### 5. 環境ファイルの設定
 
 VScode等で、envファイル内の環境設定の変数を変更する
 envファイルの11行目を以下のように変更してください。
@@ -69,13 +69,13 @@ DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 
-###6. アプリケーションキーの生成
+### 6. アプリケーションキーの生成
 $ php artisan key:generate
 
-###7. データベースのマイグレーション
+### 7. データベースのマイグレーション
 $ php artisan migrate
 
-###8. ダミーデータを入れる
+### 8. ダミーデータを入れる
 $ php artisan db:seed
 
 ##メール認証の確認に使用するアプリの設定方法
@@ -111,7 +111,7 @@ MAIL_FROM_ADDRESS=test@gmail.com
 以上で、新規会員登録時[Mailtrap](https://mailtrap.io/)のMy Inboxに認証メールが届きますので、届いたメールを開き
 Verify Email Addressをクリックして認証完了です。
 
-##各種機能のテスト用アカウント情報
+## 各種機能のテスト用アカウント情報
 
 name : 山田花子
 email : hanako@test.com
