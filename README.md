@@ -63,10 +63,15 @@ VScode等で、envファイル内の環境設定の変数を変更する
 envファイルの11行目を以下のように変更してください。
 
 DB_CONNECTION=mysql
+
 DB_HOST=mysql
+
 DB_PORT=3306
+
 DB_DATABASE=laravel_db
+
 DB_USERNAME=laravel_user
+
 DB_PASSWORD=laravel_pass
 
 ### 6. アプリケーションキーの生成
@@ -78,7 +83,7 @@ $ php artisan migrate
 ### 8. ダミーデータを入れる
 $ php artisan db:seed
 
-##メール認証の確認に使用するアプリの設定方法
+## メール認証の確認に使用するアプリの設定方法
 
 [Mailtrap](https://mailtrap.io/)
 無料で利用するのに、クレジットカードの登録などは不要です。
@@ -96,10 +101,15 @@ Laravelの.envファイルにそのまま追記できる形式で、サーバー
 .env 31行目から36行目
 
 MAIL_MAILER=smtp    こちらはデフォルトです。
+
 MAIL_HOST=mailhog
+
 MAIL_PORT=1025
+
 MAIL_USERNAME=null
+
 MAIL_PASSWORD=null
+
 MAIL_ENCRYPTION=null
 
 .env 36行目も以下に設定お願いします。
@@ -114,7 +124,9 @@ Verify Email Addressをクリックして認証完了です。
 ## 各種機能のテスト用アカウント情報
 
 name : 山田花子
+
 email : hanako@test.com
+
 password : hanako0000
 
 こちらを使用して、ログインお願いいたします。
