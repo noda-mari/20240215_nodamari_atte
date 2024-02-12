@@ -15,22 +15,22 @@ envファイルでのSMTPサーバー設定等につきましては、下記の�
 
 
 ## 機能一覧
-会員登録
-ログイン機能
-メール認証機能
-ログアウト
-勤怠時間の打刻機能
-休憩時間の打刻機能
-日付別、勤務時間の一覧
-従業員一覧
-従業員別、勤務時間の一覧
+*会員登録
+*ログイン機能
+*メール認証機能
+*ログアウト
+*勤怠時間の打刻機能
+*休憩時間の打刻機能
+*日付別、勤務時間の一覧
+*従業員一覧
+*従業員別、勤務時間の一覧
 
 ## 使用技術
-laravel : 8.*
-nginx : 1.21.1
-PHP : 8.2
-mysql : 8.0.26
-Docker : 24.0.6
+laravel : 8.*  
+nginx : 1.21.1  
+PHP : 8.2  
+mysql : 8.0.26  
+Docker : 24.0.6  
 
 ## テーブル設計
 
@@ -62,17 +62,12 @@ $ exit
 VScode等で、envファイル内の環境設定の変数を変更する
 envファイルの11行目を以下のように変更してください。
 
-DB_CONNECTION=mysql
-
-DB_HOST=mysql
-
-DB_PORT=3306
-
-DB_DATABASE=laravel_db
-
-DB_USERNAME=laravel_user
-
-DB_PASSWORD=laravel_pass
+DB_CONNECTION=mysql  
+DB_HOST=mysql  
+DB_PORT=3306  
+DB_DATABASE=laravel_db  
+DB_USERNAME=laravel_user  
+DB_PASSWORD=laravel_pass  
 
 ### 6. アプリケーションキーの生成
 $ php artisan key:generate
@@ -100,17 +95,12 @@ Laravelの.envファイルにそのまま追記できる形式で、サーバー
 
 .env 31行目から36行目
 
-MAIL_MAILER=smtp    こちらはデフォルトです。
-
-MAIL_HOST=mailhog
-
-MAIL_PORT=1025
-
-MAIL_USERNAME=null
-
-MAIL_PASSWORD=null
-
-MAIL_ENCRYPTION=null
+MAIL_MAILER=smtp    こちらはデフォルトです。  
+MAIL_HOST=mailhog  
+MAIL_PORT=1025  
+MAIL_USERNAME=null  
+MAIL_PASSWORD=null  
+MAIL_ENCRYPTION=null  
 
 .env 36行目も以下に設定お願いします。
 
@@ -123,11 +113,9 @@ Verify Email Addressをクリックして認証完了です。
 
 ## 各種機能のテスト用アカウント情報
 
-name : 山田花子
-
-email : hanako@test.com
-
-password : hanako0000
+name : 山田花子  
+email : hanako@test.com  
+password : hanako0000  
 
 こちらを使用して、ログインお願いいたします。
 
