@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Work;
+use App\Models\User;
+use App\Models\Breaking;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(UsersTableSeeder::class);
+        $this->call(WorksTableSeeder::class);
+        $this->call(BreakingsTableSeeder::class);
+        User::factory(9)->create();
+        Work::factory(30)->create();
     }
 }

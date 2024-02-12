@@ -216,7 +216,7 @@ class TimeSearchController extends Controller
                     'breaking_total' => $breaking_total->format('H:i:s')
                 );
 
-                $date_start = new DateTime($work_end->format('Y-m-d') . '00:00:00'); //次の日の初めから就業時間までの計算
+                $date_start = new DateTime($work_end->format('Y-m-d') . '00:00:00');
                 $diff_time = $date_start->diff($work_end);
                 $date = $work_end->format('Y-m-d');
                 $worked_time_2 = new DateTime($date);
