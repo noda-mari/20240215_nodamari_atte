@@ -47,12 +47,12 @@ $ git clone git@github.com:noda-mari/20240215_nodamari_atte.git
 $ docker-compose up -d --build
 
 ### 3. Composer パッケージのインストール
-$ docker-compose exec php bash &emsp; PHPコンテナ内にログイン
+$ docker-compose exec php bash &emsp;&emsp; PHPコンテナ内にログイン
 
 $ composer install
 
 ### 4. 環境ファイルの設定
-$ cp .env.example .env              &emsp; `.env.example` ファイルを `.env` という名前でコピー
+$ cp .env.example .env              &emsp;&emsp; `.env.example` ファイルを `.env` という名前でコピー
 
 $ exit
 
