@@ -5,7 +5,7 @@
 初級模擬案件の課題として作成いたしました。
 
 ## アプリケーションURL
-http://localhost/register
+http://localhost/login
 こちらにアクセスすると、ログインページが表示されます。
 新規会員登録をクリックしていただき、会員登録を行ってください。
 メール認証のテストサーバーとして、mailtrapというアプリを使用しております
@@ -15,15 +15,15 @@ envファイルでのSMTPサーバー設定等につきましては、下記の�
 
 
 ## 機能一覧
-*会員登録
-*ログイン機能
-*メール認証機能
-*ログアウト
-*勤怠時間の打刻機能
-*休憩時間の打刻機能
-*日付別、勤務時間の一覧
-*従業員一覧
-*従業員別、勤務時間の一覧
+会員登録  
+ログイン機能  
+メール認証機能  
+ログアウト  
+勤怠時間の打刻機能  
+休憩時間の打刻機能  
+日付別、勤務時間の一覧  
+従業員一覧  
+従業員別、勤務時間の一覧  
 
 ## 使用技術
 laravel : 8.*  
@@ -48,12 +48,12 @@ $ git clone git@github.com:noda-mari/20240215_nodamari_atte.git
 $ docker-compose up -d --build
 
 ### 3. Composer パッケージのインストール
-$ docker-compose exec php bash      PHPコンテナ内にログイン
+$ docker-compose exec php bash                 PHPコンテナ内にログイン
 
 $ composer install
 
 ### 4. 環境ファイルの設定
-$ cp .env.example .env     `.env.example` ファイルを `.env` という名前でコピー
+$ cp .env.example .env              `.env.example` ファイルを `.env` という名前でコピー
 
 $ exit
 
