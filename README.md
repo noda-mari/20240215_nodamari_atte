@@ -32,7 +32,7 @@ mysql : 8.0.26
 Docker : 24.0.6  
 
 ## テーブル設計
-
+![スクリーンショット 2024-02-12 115226](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/47b761c5-fc00-467f-ac0d-8784859efd38)
 
 ## ER図
 
