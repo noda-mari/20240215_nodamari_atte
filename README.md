@@ -47,12 +47,12 @@ $ git clone git@github.com:noda-mari/20240215_nodamari_atte.git
 $ docker-compose up -d --build
 
 ### 3. Composer パッケージのインストール
-$ docker-compose exec php bash                 PHPコンテナ内にログイン
+$ docker-compose exec php bash \&emsp; PHPコンテナ内にログイン
 
 $ composer install
 
 ### 4. 環境ファイルの設定
-$ cp .env.example .env              `.env.example` ファイルを `.env` という名前でコピー
+$ cp .env.example .env              \&emsp; `.env.example` ファイルを `.env` という名前でコピー
 
 $ exit
 
@@ -94,7 +94,7 @@ Laravelの.envファイルにそのまま追記できる形式で、サーバー
 
 .env 31行目から36行目
 
-MAIL_MAILER=smtp    こちらはデフォルトです。  
+MAIL_MAILER=smtp    \&emsp;こちらはデフォルトです。  
 MAIL_HOST=mailhog  
 MAIL_PORT=1025  
 MAIL_USERNAME=null  
