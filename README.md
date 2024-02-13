@@ -35,7 +35,7 @@ Docker : 24.0.6
 ![スクリーンショット 2024-02-12 115226](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/47b761c5-fc00-467f-ac0d-8784859efd38)
 ![スクリーンショット 2024-02-12 115241](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/a6080de6-1605-42c1-81c6-5adf30a05397)
 ## ER図
-
+![attendance_system drawio](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/75204c7a-f2e8-4226-a181-bbd9aa39cfad)
 
 ## 環境構築
 以下の手順に従って、ローカル環境でこのアプリケーションをセットアップしてください。
