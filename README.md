@@ -94,7 +94,7 @@ Laravelの.envファイルにそのまま追記できる形式で、サーバー
 
 .env 31行目から36行目
 
-MAIL_MAILER=smtp    \&emsp;こちらはデフォルトです。  
+MAIL_MAILER=smtp    &emsp;&emsp;&emsp;こちらはデフォルトです。  
 MAIL_HOST=mailhog  
 MAIL_PORT=1025  
 MAIL_USERNAME=null  
