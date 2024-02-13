@@ -33,7 +33,7 @@ Docker : 24.0.6
 
 ## テーブル設計
 ![スクリーンショット 2024-02-12 115226](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/47b761c5-fc00-467f-ac0d-8784859efd38)
-
+![スクリーンショット 2024-02-12 115241](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/a6080de6-1605-42c1-81c6-5adf30a05397)
 ## ER図
 
 
@@ -85,12 +85,12 @@ $ php artisan db:seed
 
 アカウントは、Googleアカウントなどで連携するか、メールアドレスでアカウントを作成できます。
 
-サインイン後、受信トレイの設定が開かれます。
-
-プルダウンから「Laravel 7.x and 8.x」を選択します。
-
+サインイン後、受信トレイの設定が開かれます。  
+![スクリーンショット 2024-02-13 025215](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/67edf047-9cd3-430e-9109-3113301eb0d2)
+プルダウンから「Laravel 7.x and 8.x」を選択します。  
 Laravelの.envファイルにそのまま追記できる形式で、サーバー・ユーザー・パスワードなどが記述されています。
 右上のCopyボタンをクリックし、Laravelプロジェクトの.envファイルに貼り付けて、サーバー設定を変更してください。
+![スクリーンショット 2024-02-13 173558](https://github.com/noda-mari/20240215_nodamari_atte/assets/147699251/e04b62da-b21a-44f9-9aab-46cc1a68e14f)  
 
 .env 31行目から36行目
 
