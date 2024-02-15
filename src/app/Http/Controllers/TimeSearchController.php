@@ -149,7 +149,7 @@ class TimeSearchController extends Controller
 
 
 
-    public function workTimeArray($id)
+    private function workTimeArray($id)
     {
 
         $works = Work::where('user_id', $id)->get();
