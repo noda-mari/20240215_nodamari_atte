@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class UsersTableSeeder extends Seeder
 {
@@ -15,14 +15,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $param = [
-            'name' => '山田花子',
-            'email' => 'hanako@test.com',
-            'email_verified_at' => now(),
-            'password' => '$2y$10$0gB305P/aeyHfxxYi5q6aOc.6wHFYfiNJNlNHTXrxEcwlLVE6zhey',
-            'created_at' => now(),
-            'updated_at' => now()
-        ];
-        DB::table('users')->insert($param);
+        User::firstOrCreate(
+            ['email' => 'hanako@test.com'], // ← 一意キー
+            [
+                'name' => '山田花子',
+                'email_verified_at' => now(),
+                'password' => Hash::make('password123'), // パスワードはHash化
+            ]
+        );
     }
 }
