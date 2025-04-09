@@ -24,8 +24,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login',[LoginController::class,'index']);
-Route::get('/register',[RegisterController::class,'index']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::get('/',[AttendanceController::class,'index'])->middleware('verified');
 Route::get('/work-start',[AttendanceController::class, 'startTimeAdd']);
 Route::get('/work-end',[AttendanceController::class,'endTimeAdd']);
